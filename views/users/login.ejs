@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+    <div class="row mt-3">
+        <!-- col-8 divides the page into 8 columns offset 2 is  the content starts after 2 columns -->
+        <div class="col-8 offset-2">
+            <h3>
+                Login on Wanderlust
+            </h3>
+
+            <form method="POST" action="/login" novalidate class="needs-validation">
+                <!-- novalidate sets the default html css styling as null -->
+                 <!-- also put required in the inputs -->
+                <!--submitting this form will save data in DB and redirect it to listings-->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" id="username" class="form-control"
+                        required/>
+                    <div class="invalid-feedback">invalid username</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control"
+                        required/>
+                    <div class="invalid-feedback">invalid password</div>
+                </div>
+                <button class="signup btn btn-success" type="submit">Login</button>
+            </form>
+            </body>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <!-- joining the functionality of bootstrap form which is present in script.js -->

@@ -1,0 +1,72 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="row mt-3">
+        <!-- col-8 divides the page into 8 columns offset 2 is  the content starts after 2 columns -->
+        <div class="col-8 offset-2">
+            <h3>
+                Edit your Listing
+            </h3>
+            <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation"
+                enctype="multipart/form-data">
+                <!-- novalidate sets the default html css styling as null -->
+                <!-- also put required in the inputs -->
+                <!--submitting this form will save data in DB and redirect it to listings-->
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="listing[title]" value="<%=listing.title%>" class="form-control" required>
+
+                    <!-- if input type is correct this shows up -->
+                    <div class="valid-feedback">Title looks good</div>
+
+                </div>
+                <br><!--writing listing[] and not just the name so that becomes shorter while adding in route of app.js-->
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea type="text" name="listing[description]" class="form-control"
+                        required><%=listing.description%></textarea>
+
+                    <!-- if input type is incorrect this shows up -->
+                    <div class="invalid-feedback">Please enter a short description</div>
+
+                </div>
+                <div class="mb-3">
+                    Original Listing Image
+                    <img src="<%=changedImage%>" alt="">
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload Image URL</label>
+                    <input name="listing[image]" type="file" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input name="listing[price]" value="<%=listing.price%>" type="number" class="form-control"
+                            required>
+
+                        <div class="invalid-feedback">Please enter valid Price</div>
+
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="listing[country]" value="<%=listing.country%>" type="text" class="form-control"
+                            required>
+
+                        <div class="invalid-feedback">Please enter valid Country name</div>
+
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="listing[location]" value="<%=listing.location%>" type="text" class="form-control"
+                        required>
+
+                    <div class="invalid-feedback">Please enter valid Location</div>
+
+                </div>
+                <button type="submit" class="btn btn-dark edit-btn mt-3">Save Edit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <!-- joining the functionality of bootstrap form which is present in script.js -->
