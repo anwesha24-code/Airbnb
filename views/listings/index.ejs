@@ -7,6 +7,25 @@
       align-items: center;
     }
 
+    .filter-icons {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+
+      gap: 2rem;
+    }
+
+    .filter-icons::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Edge */
+    }
+
+    .filter:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
     .filter {
       text-align: center;
       margin-right: 2rem;
@@ -22,67 +41,71 @@
     .filter p {
       font-size: 0.8rem;
     }
-    .tax-info{
+
+    .tax-info {
       display: none;
       /* display: none doesnt occupy space */
       /* visibility: hidden keeps occupying the space; */
     }
-    .tax-toggle{
+
+    .tax-toggle {
       border: 1px solid black;
       border-radius: 1rem;
-      height:3.25rem;
-      padding:1rem;
+      height: 3.25rem;
+      padding: 1rem;
       margin-right: 2rem;
-      display:flex;
-      align-items: center;;
+      display: flex;
+      align-items: center;
+      ;
     }
-      
   </style>
   <!-- <h3>All Listings</h3> -->
   <div id="filters">
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-fire"></i></div>
-      <p>Trending</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-city"></i></div>
-      <p>Iconic cities</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-bed"></i></div>
-      <p>Rooms</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-mountain"></i></div>
-      <p>Mountains</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-chess-rook"></i></div>
-      <p>Castles</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-person-swimming"></i></div>
-      <p>Amazing pools</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-campground"></i></div>
-      <p>Camping</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-cow"></i></div>
-      <p>Farms</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-snowflake"></i></div>
-      <p>Arctic</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-ship"></i></div>
-      <p>Boats</p>
-    </div>
-    <div class="filter">
-      <div class=""><i class="fa-solid fa-igloo"></i></div>
-      <p>Domes</p>
+    <div class="filter-icons">
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-fire"></i></div>
+        <p>Trending</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-city"></i></div>
+        <p>Iconic cities</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-bed"></i></div>
+        <p>Rooms</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-mountain"></i></div>
+        <p>Mountains</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-chess-rook"></i></div>
+        <p>Castles</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-person-swimming"></i></div>
+        <p>Amazing pools</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-campground"></i></div>
+        <p>Camping</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-cow"></i></div>
+        <p>Farms</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-snowflake"></i></div>
+        <p>Arctic</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-ship"></i></div>
+        <p>Boats</p>
+      </div>
+      <div class="filter">
+        <div class=""><i class="fa-solid fa-igloo"></i></div>
+        <p>Domes</p>
+      </div>
     </div>
     <div class="tax-toggle">
       <div class="form-check-reverse form-switch">
@@ -109,7 +132,7 @@
                   </b></h5>
                 <p class="card-text">
                   &#8377;<%= listing.price.toLocaleString("en-IN") %>/night
-                  <i class="tax-info">&nbsp; &nbsp; +18%GST</i>
+                    <i class="tax-info">&nbsp; &nbsp; +18%GST</i>
                 </p>
                 <!-- <a href="/listings/" class="btn btn-primary">View Details</a> -->
               </div>
@@ -121,16 +144,16 @@
   </div>
 
   <script>
-    let taxToggle=document.getElementById('switchCheckDefault');
-    taxToggle.addEventListener("click",()=>{
-      let taxInfo=document.querySelectorAll('.tax-info');
+    let taxToggle = document.getElementById('switchCheckDefault');
+    taxToggle.addEventListener("click", () => {
+      let taxInfo = document.querySelectorAll('.tax-info');
       // taxInfo.style.display="block";
-      for(info of taxInfo){
-        if(taxToggle.checked){
-          info.style.display="inline";
+      for (info of taxInfo) {
+        if (taxToggle.checked) {
+          info.style.display = "inline";
         }
-        else{
-          info.style.display="none";
+        else {
+          info.style.display = "none";
         }
       }
     })
