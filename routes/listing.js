@@ -46,10 +46,12 @@ router
 //after clicking submission of edit finds by id(extracted from curr url)                            //EDIT PAGE --SAVE EDIT BUTTON-->UPDATES IN DB--> SHOW PAGE
 // and updates("where id=id given",{all the new values entered})
 //Update Route
-.put(isLoggedIn, isOwner, 
+
+.post(isLoggedIn,
+    validateListing,//checking schema validation before putting data in db 
+    isOwner, 
     upload.single('listing[image]'),//calls schema checking as it is a middleware
-    validateListing,//checking schema validation before putting data in db
-    wrapAsync(listingController.updateListing))
+    wrapAsync(listingController.createListing))
 //on clicking delete for a listing the id is fround in DB and data is removed                      //SHOW PAGE --DELETE BUTTON-->DELETES FROM DB-->DISPLAY PAGE
 //Delete Route
 .delete(isLoggedIn, isOwner, wrapAsync(listingController.destroyListing));

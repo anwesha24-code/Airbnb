@@ -2,6 +2,7 @@
 //they are only accessible in server-side code. To use the MAP_TOKEN in your client-side JavaScript, you need to pass it from your server to your client.
 //so we added a script tag in show.ejs to define a global variable mapToken with the value of process.env.MAP_TOKEN
 
+//this is for custom marker icon
 const el = document.createElement('div');
 el.className = 'marker';
 el.innerHTML='<i class="fa-regular fa-compass"></i>';//adding a compass icon to the marker
