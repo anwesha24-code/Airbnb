@@ -36,6 +36,29 @@ router
 router.get("/new",isLoggedIn, listingController.renderNewForm);
 
 
+                                                                                                        // SEARCH Route — filter listings by title or location
+router.get("/search", wrapAsync(async (req, res) => {
+    // taking out the searched text
+  const query = req.query.q?.trim();
+  if (!query) {
+    // if empty search, just show all listings
+    const allListings = await Listing.find({});
+    return res.render("listings/index", { allListings });
+  }
+
+  // Case-insensitive search in title OR location
+  const allListings = await Listing.find({
+    // we use $or because either title or location matches will be displayed
+    $or: [
+        // syntax
+      { title: { $regex: query, $options: "i" } },
+      { location: { $regex: query, $options: "i" } },
+    ],
+  });
+
+// rendering the filtered out search matches
+  res.render("listings/index", { allListings });
+}));
 
 router
 .route("/:id")

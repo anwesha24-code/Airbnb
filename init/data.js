@@ -95,6 +95,102 @@ const sampleListings = [
       coordinates: [-86.8515, 21.1619],
     },
   },
+  {
+    title: "Lakeside Cabin",
+    description:
+      "Enjoy a serene lake view from this cozy wooden cabin. Ideal for fishing, reading, and campfires.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1100,
+    location: "Lake Tahoe",
+    country: "United States",
+    geometry: {
+      type: "Point",
+      coordinates: [-120.043, 39.0968],
+    },
+  },
+  {
+    title: "Parisian Penthouse",
+    description:
+      "Luxury penthouse in the heart of Paris with an Eiffel Tower view and modern interior.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3000,
+    location: "Paris",
+    country: "France",
+    geometry: {
+      type: "Point",
+      coordinates: [2.3522, 48.8566],
+    },
+  },
+  {
+    title: "Tokyo Capsule Stay",
+    description:
+      "A minimalist capsule stay experience in Tokyo. Clean, compact, and perfect for solo travelers.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 600,
+    location: "Tokyo",
+    country: "Japan",
+    geometry: {
+      type: "Point",
+      coordinates: [139.6917, 35.6895],
+    },
+  },
+  {
+    title: "Santorini Cliff Villa",
+    description:
+      "Overlooking the blue Aegean Sea, this whitewashed villa offers breathtaking sunset views.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2700,
+    location: "Santorini",
+    country: "Greece",
+    geometry: {
+      type: "Point",
+      coordinates: [25.4615, 36.3932],
+    },
+  },
+  {
+    title: "Dubai Luxury Apartment",
+    description:
+      "Stay in the sky! A modern high-rise apartment with panoramic city views and premium amenities.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3500,
+    location: "Dubai",
+    country: "United Arab Emirates",
+    geometry: {
+      type: "Point",
+      coordinates: [55.2708, 25.2048],
+    },
+  },
+  {
+    title: "Swiss Alps Chalet",
+    description:
+      "Ski-in, ski-out from this traditional wooden chalet with a cozy fireplace and mountain view.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2400,
+    location: "Zermatt",
+    country: "Switzerland",
+    geometry: {
+      type: "Point",
+      coordinates: [7.7491, 46.0207],
+    },
+  },
 ];
 
 
