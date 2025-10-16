@@ -140,10 +140,4 @@ Coming soon... *(add screenshots or GIFs here!)*
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** – feel free to use and modify it.
-
----
-
-<p align="center">💡 Built with passion by <b>[Your Name]</b></p>
+<p align="center">💡 Built with passion by <b>Anwesha Pal</b></p>
