@@ -1,10 +1,26 @@
 <h1 align="center">🏠 Airbnb Clone</h1>
 
 <p align="center">
-  <b>Hotel Listing Website built with Node.js, Express, MongoDB, and EJS</b>  
-  <br/>
-  🌐 <a href="https://airbnb-5t79.onrender.com" target="_blank">Live Demo</a>
-</p>
+  A full-stack **Airbnb-style Listing Web App** built with **Node.js**, **Express**, **MongoDB**, and **EJS templates**.  
+Users can browse property listings, view details with maps, leave reviews, and manage their own listings.
+  ---
+
+## 🌐 Live Demo
+🔗 [Airbnb Clone on Render](https://airbnb-5t79.onrender.com/listings)
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology Used |
+|-------|----------------|
+| 💻 Frontend | HTML, CSS, Bootstrap, EJS |
+| ⚙️ Backend | Node.js, Express.js |
+| 🗄️ Database | MongoDB with Mongoose |
+| ☁️ Hosting | Render |
+| 🖼️ Image Storage | Cloudinary |
+| 🗺️ Map Integration | Mapbox API |
+| 🔒 Authentication | Passport.js |
 
 ---
 
@@ -77,17 +93,61 @@ Airbnb/
 
 ---
 
-## 💻 Technologies Used
+## 🧭 Pages & Features
 
-| Category | Tools |
-|-----------|-------|
-| **Frontend** | HTML, CSS, JavaScript, EJS |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB (Mongoose) |
-| **Cloud Services** | Cloudinary |
-| **Version Control** | Git, GitHub |
-| **Styling** | Bootstrap |
-| **Map Integration** | Mapbox API |
+### 🏠 Home Page (`/listings`)
+Displays all property listings in a grid layout with images, title, location, and price.  
+🖼️ *Screenshot Placeholder*  
+`![Home Page](screenshots/index.png)`
+
+---
+
+### 🏡 Listing Details Page (`/listings/:id`)
+Shows full details including title, description, owner, price, location, and image.  
+Integrated **Mapbox map** displays the property location.  
+🖼️ *Screenshot Placeholder*  
+`![Listing Details](screenshots/show.png)`
+
+---
+
+### ✏️ New Listing Page (`/listings/new`)
+Form for logged-in users to add new listings.  
+Fields include title, description, price, location, and image upload.  
+🖼️ *Screenshot Placeholder*  
+`![New Listing](screenshots/new.png)`
+
+---
+
+### 🖊️ Edit Listing Page (`/listings/:id/edit`)
+Allows listing owners to edit their listings with a pre-filled form.  
+🖼️ *Screenshot Placeholder*  
+`![Edit Listing](screenshots/edit.png)`
+
+---
+
+### 💬 Reviews Section
+Logged-in users can leave star ratings and comments for listings.  
+All reviews are displayed below the listing details.  
+🖼️ *Screenshot Placeholder*  
+`![Reviews Section](screenshots/reviews.png)`
+
+---
+
+### 🗺️ Map Feature
+Interactive Mapbox map shows the exact location of each listing on the detail page.  
+🖼️ *Screenshot Placeholder*  
+`![Map Section](screenshots/map.png)`
+
+---
+
+## ⚡ Key Features
+
+- Browse all listings with images and details  
+- Add, edit, and delete your own listings  
+- Leave and manage reviews  
+- Interactive maps with Mapbox  
+- Responsive, mobile-friendly design  
+- Cloud-based image uploads via Cloudinary  
 
 ---
 
@@ -123,12 +183,6 @@ Airbnb/
    ```
    http://localhost:3000
    ```
-
----
-
-## 📸 Preview
-
-Coming soon... *(add screenshots or GIFs here!)*
 
 ---
 
