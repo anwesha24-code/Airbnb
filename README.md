@@ -121,7 +121,7 @@ Fields include title, description, price, location, and image upload.
 ### 🖊️ Edit Listing Page (`/listings/:id/edit`)
 Allows listing owners to edit their listings with a pre-filled form.  
 🖼️ *Screenshot Placeholder*  
-`![Edit Listing](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/edit.png)`
+![Edit Listing](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/edit.png)
 
 ---
 
