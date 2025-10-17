@@ -1,7 +1,7 @@
 <h1 align="center">🏠 Airbnb Clone</h1>
 
 <p align="center">
-  A full-stack **Airbnb-style Listing Web App** built with **Node.js**, **Express**, **MongoDB**, and **EJS templates**.  
+  A full-stack **Airbnb-style Listing Web App** built with <b>Node.js</b>, <b>Express</b>, <b>MongoDB</b>, and <b>EJS templates</b>.  
 Users can browse property listings, view details with maps, leave reviews, and manage their own listings.
   ---
 
