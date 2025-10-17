@@ -189,7 +189,7 @@ Interactive Mapbox map shows the exact location of each listing on the detail pa
 ## 🧰 Skills & Tools Used
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mongodb,java,python,cpp,mysql,bootstrap,git,github,photoshop,vscode" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,mongodb,bootstrap,git,github,vscode" />
 </p>
 
 ---
