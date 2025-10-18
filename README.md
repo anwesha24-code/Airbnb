@@ -3,7 +3,7 @@
 <p align="center">
   A full-stack <b>Airbnb-style Listing Web App</b> built with <b>Node.js</b>, <b>Express</b>, <b>MongoDB</b>, and <b>EJS templates</b>.  
 Users can browse property listings, view details with maps, leave reviews, and manage their own listings.
-  ---
+
 
 ## 🌐 Live Demo
 🔗 [Airbnb Clone on Render](https://airbnb-5t79.onrender.com/listings)
