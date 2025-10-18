@@ -97,7 +97,7 @@ Airbnb/
 
 ### 🏠 Home Page (`/listings`)
 Displays all property listings in a grid layout with images, title, location, and price.  
-🖼️ --- 
+
 ![Home Page](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/index.png)
 
 ---
@@ -105,7 +105,7 @@ Displays all property listings in a grid layout with images, title, location, an
 ### 🏡 Listing Details Page (`/listings/:id`)
 Shows full details including title, description, owner, price, location, and image.  
 Integrated **Mapbox map** displays the property location.  
-🖼️ ---  
+
 ![Listing1 Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show1.png)
 
 ---
@@ -113,14 +113,14 @@ Integrated **Mapbox map** displays the property location.
 ### ✏️ New Listing Page (`/listings/new`)
 Form for logged-in users to add new listings.  
 Fields include title, description, price, location, and image upload.  
-🖼️ ---  
+ 
 ![New Listing](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/new.png)
 
 ---
 
 ### 🖊️ Edit Listing Page (`/listings/:id/edit`)
 Allows listing owners to edit their listings with a pre-filled form.  
-🖼️ ---  
+ 
 ![Edit Listing](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/edit.png)
 
 ---
@@ -128,14 +128,14 @@ Allows listing owners to edit their listings with a pre-filled form.
 ### 💬 Reviews Section
 Logged-in users can leave star ratings and comments for listings.  
 All reviews are displayed below the listing details.  
-🖼️ ---  
+ 
 ![Reviews Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show2.png)
 
 ---
 
 ### 🗺️ Map Feature
 Interactive Mapbox map shows the exact location of each listing on the detail page.  
-🖼️ *Screenshot Placeholder*  
+
 ![Listing3 Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show3.png)
 
 ---
