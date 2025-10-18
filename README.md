@@ -98,7 +98,7 @@ Airbnb/
 ### 🏠 Home Page (`/listings`)
 Displays all property listings in a grid layout with images, title, location, and price.  
 🖼️ *Screenshot Placeholder*  
-`![Home Page](screenshots/index.png)`
+`![Home Page]([screenshots/index.png](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/index.png))`
 
 ---
 
@@ -106,7 +106,7 @@ Displays all property listings in a grid layout with images, title, location, an
 Shows full details including title, description, owner, price, location, and image.  
 Integrated **Mapbox map** displays the property location.  
 🖼️ *Screenshot Placeholder*  
-`![Listing Details](screenshots/show.png)`
+![Listing1 Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show1.png)
 
 ---
 
@@ -114,7 +114,7 @@ Integrated **Mapbox map** displays the property location.
 Form for logged-in users to add new listings.  
 Fields include title, description, price, location, and image upload.  
 🖼️ *Screenshot Placeholder*  
-`![New Listing](screenshots/new.png)`
+![New Listing](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/new.png)
 
 ---
 
@@ -129,14 +129,14 @@ Allows listing owners to edit their listings with a pre-filled form.
 Logged-in users can leave star ratings and comments for listings.  
 All reviews are displayed below the listing details.  
 🖼️ *Screenshot Placeholder*  
-`![Reviews Section](screenshots/reviews.png)`
+![Reviews Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show2.png)
 
 ---
 
 ### 🗺️ Map Feature
 Interactive Mapbox map shows the exact location of each listing on the detail page.  
 🖼️ *Screenshot Placeholder*  
-`![Map Section](screenshots/map.png)`
+![Listing3 Details](https://github.com/anwesha24-code/Airbnb/blob/3d5ae5a8ba13305c65a8edfdce2337cedac0e0c0/screenshots/show3.png)
 
 ---
 
